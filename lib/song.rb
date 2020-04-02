@@ -29,7 +29,7 @@ class Song
     
     @@genres.each do |g|
       if genre_histogram[g]
-        genre_histogram[g] += 1
+        genre_histogram.include?(g) += 1
       else
         genre_histogram[g] = 1
       end
