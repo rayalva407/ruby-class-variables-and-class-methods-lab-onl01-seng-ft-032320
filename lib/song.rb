@@ -47,6 +47,7 @@ class Song
         artist_histogram[a] = 1
       end
     end
+    artist_histogram
   end
   
 end
