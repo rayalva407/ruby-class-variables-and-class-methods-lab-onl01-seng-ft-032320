@@ -34,6 +34,6 @@ class Song
         genre_histogram[g] = 1
       end
     end
+    genre_histogram
   end
-  
 end
