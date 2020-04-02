@@ -25,7 +25,10 @@ class Song
   end
   
   def self.genre_count
+    histogram = {}
     
+    @@genres.each do |g|
+      
   end
   
 end
