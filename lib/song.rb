@@ -29,11 +29,24 @@ class Song
     
     @@genres.each do |g|
       if genre_histogram[g]
-        genre_histogram.include?(g) += 1
+        genre_histogram[g] += 1
       else
         genre_histogram[g] = 1
       end
     end
     genre_histogram
   end
+  
+  def self.artist_count
+    artist_histogram = {}
+    
+    @@artists.each do |a|
+      if artist_histogram[a]
+        artist_histogram[a] += 1
+      else
+        artist_histogram[a] = 1
+      end
+    end
+  end
+  
 end
