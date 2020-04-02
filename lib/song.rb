@@ -25,9 +25,12 @@ class Song
   end
   
   def self.genre_count
-    histogram = {}
+    genre_histogram = {}
     
     @@genres.each do |g|
+      if genre_histogram.include?(g)
+        genre_histogram[g] += 1
+      end
       
   end
   
